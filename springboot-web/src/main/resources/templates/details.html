@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!-- Thymeleaf es una biblioteca que permite enlazar datos del modelo de la aplicación a la vista. --> 
+<html lang="en" xmlns:th="http://www.thymeleaf.org"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,10 @@
     <ul>
         <li th:text="${user.name}"></li>
         <li th:text="${user.lastname}"></li>
+
+        <!-- Si el email no es null se muestra a la vista -->
+        <li th:if="${user.email}" th:text="${user.email}"></li>
+        <li th:if="${user.email == null}" th:text="${'No tiene email'}"></li>
     </ul>
 </body>
 </html>
