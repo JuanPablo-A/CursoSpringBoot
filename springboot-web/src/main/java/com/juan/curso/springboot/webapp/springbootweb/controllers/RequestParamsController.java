@@ -56,7 +56,6 @@ public class RequestParamsController {
         params.setCode(code);
         params.setMessage(request.getParameter("message"));
         return params;
-
     }
 
 }

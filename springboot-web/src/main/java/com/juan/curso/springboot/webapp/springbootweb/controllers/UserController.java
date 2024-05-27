@@ -35,8 +35,10 @@ public class UserController {
         return "list";
     }
 
-    // Nombre de atributo que se va a usar en la vista y se puede usar en cualquier metodo del controlador
-    // Sirve para no tener que estar pasando el objeto en cada metodo (reutilizarlo)
+     /*
+        Nombre de atributo que se va a usar en la vista y se puede usar en cualquier metodo del controlador
+        Sirve para no tener que estar pasando el objeto en cada metodo (reutilizarlo)
+     */
     @ModelAttribute("users")
     public List<User> usersModel(){
         List<User> users = Arrays.asList(
