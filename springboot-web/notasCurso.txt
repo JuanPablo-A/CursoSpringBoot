@@ -1,0 +1,17 @@
+DTO (Data transferer object): 
+    - Realizar consultas
+    - Procesar resultados
+    - No enviar todos los atributos en el json 
+    - Trasportar datos formateados, simplificados, no trasportar todo el objecto 
+    - Transportar datos listos entre APIs
+    - Va dentro de models
+
+
+Para mandar parametro del reques es añadiendo un "?", el nombre del parametro y el valor 
+Ejemplo: http://localhost:8080/api/params/foo?message=hola-que-tal
+
+Para mandar varios parametros se hace con &:
+Ejemplo: http://localhost:8080/api/params/bar?text=hola-que-tal&code=12345
+
+
+Inyectar valores usando @value
